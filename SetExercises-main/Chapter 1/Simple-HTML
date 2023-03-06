@@ -1,0 +1,16 @@
+<DOCTYPE>
+<html>
+    <head>
+        <title>Simple HTML</title>
+    </head>
+    <body>
+        <i><h1>Hello</h1></i>
+        <em><p>My name is Avril</p></em>
+        <h2>DUBAI UNITED ARAB EMIRATES</h2>
+        <h3>Always do your best!</h3>
+        <h4>FIGHTING</h4>
+        <h5>Just a Gentle Reminder:</h5>
+        <h6>LOVE YOURSELF</h6>
+    </br>
+    </body>
+    </html>
