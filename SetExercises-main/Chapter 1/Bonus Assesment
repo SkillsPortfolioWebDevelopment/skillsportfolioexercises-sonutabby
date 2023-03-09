@@ -1,0 +1,23 @@
+<DOCTYPE>
+<html>
+    <head>
+        <title>My Bonus Assesment</title>
+        <link rel="stylesheet" href="Bonus.css"> <!--This serves as my external stylesheet-->
+    </head>
+
+<body>
+    <div><h1>BONUS WEBPAGE ASSESMENT</h1></div>
+    <em><h3>Hi, I'm Avril!</h3></em>
+
+</br> </br>
+    <p>Today I will be sharing my passion about music. Music completely changed my life. Music is one of the powerful instrument of life
+        It has the power to bring us joy, tears, and can carry us back in time and inspire us to dance in the moment.
+        It speaks what we cannot expressed. Music soothes the mind and gives it rest, heals the heart and makes it whole flows from heaven to soul.
+        Music really bring me peace and joy every time I play and listens to it. Music is also a strong symbol of life. When people are hurt and suffering music helps us,
+        to makpe it feel all better. When I was a kid I used to ask myself, what i am capable of, I was very insecure to those people who are most talented and play every kind of instrument.
+        Until I start to learn guitar, everything has changed. The people that I used to think that I'm insecure of them, they inspire me to become a good instrument player.
+    </p>
+</br> </br>
+    <img src="https://i.pinimg.com/564x/59/2f/7d/592f7db69285e6badad5250c0722c259.jpg">
+</body>
+</html>
