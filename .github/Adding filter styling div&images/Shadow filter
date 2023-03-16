@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<META NAME="GENERATOR" content="Microsoft Visual Studio">
+    <title>Lecture 5</title>
+    </head>
+    <body>
+
+        <div id="A"> <img src="cute.png" /> div#A </div>
+    
+    </body>
+</html>
