@@ -1,0 +1,34 @@
+p {
+    text-align: center;
+}
+
+img#A {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    box-shadow: 5px 5px 5px black;
+    filter: grayscale(100%);
+
+}
+
+img#B {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    box-shadow: 5px 5px 5px black;
+    filter: blur(5px);
+}
+
+img#C {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    box-shadow: 5px 5px 5px black;
+    filter: brightness(50%);
+}
