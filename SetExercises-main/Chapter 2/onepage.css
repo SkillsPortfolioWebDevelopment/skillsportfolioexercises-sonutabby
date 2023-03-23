@@ -29,6 +29,7 @@ footer {
 }
 
 h1 {
+    border-bottom: rgb(160, 136, 91) solid 11px;
     text-align: center;
     font-size: xx-large;
     font-family: Arial;
