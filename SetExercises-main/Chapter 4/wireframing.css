@@ -1,9 +1,60 @@
 header {
-    font: "Tahoma", 700;
+    font-family: "Tahoma";
+    font-weight: 700;
     text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    word-spacing: normal;
 }
 
 div {
-    background-color: blueviolet;
+    background-color: #17072b;
     text-align: center;
+    font-family: "Tahoma";
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    word-spacing: 10px;
+    background-size: 50px;
+    object-position: left;
+}
+
+h2 {
+    font-family: "Tahoma";
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+p {
+    font-family: "Arial";
+    font-size: 20px;
+    white-space: initial;
+}
+
+section {
+    background-color: #172d67;
+    float: right;
+    object-position: right;
+    width: auto;
+    height: 500px;
+    color: white;
+    font-family: "Arial";
+}
+
+footer {
+    background-color: #8c15e9;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-family: "Tahoma";
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
 }
