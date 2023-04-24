@@ -8,6 +8,7 @@ header {
     margin-top: 25px;
     margin-bottom: 25px;
     word-spacing: normal;
+    height: 50px;
 }
 
 div {
@@ -22,6 +23,7 @@ div {
     word-spacing: 10px;
     background-size: 50px;
     object-position: left;
+    line-height: 120px;
 }
 
 h2 {
