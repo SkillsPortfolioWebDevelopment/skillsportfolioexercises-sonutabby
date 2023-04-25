@@ -32,19 +32,21 @@ h2 {
     font-weight: bold;
     text-decoration: underline;
     margin-top: 20px;
+    margin-left: 25px;
 }
 
 p {
     font-family: "Arial";
     font-size: 20px;
     white-space: initial;
+    margin-left: 25px;
 }
 
 section {
     background-color: #172d67;
     float: right;
     object-position: right;
-    width: auto;
+    width: 500px;
     height: 500px;
     color: white;
     font-family: "Arial";
@@ -57,6 +59,6 @@ footer {
     text-align: center;
     font-family: "Tahoma";
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 20px;
 }
