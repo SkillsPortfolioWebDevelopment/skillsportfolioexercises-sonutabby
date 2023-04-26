@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+
+    <!--internal cascading stylesheets-->
+    <style>
+
+        body {
+            background-color: darkslategrey;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        .button {
+            background-color: blueviolet;
+            border-radius: 10px;
+            border: 1px solid black;
+            color: black;
+            margin: 1rem;
+            padding: 1.5rem 3rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center><h1>Audio Sampler</h1></center>
+
+    <audio src="Ah-ha_Sound_Effects_(getmp3.pro).mp3" id="Ah-Ha"></audio>
+    <audio src="Dan_Dan_Dannnnnnnn_Sound_Effect_(getmp3.pro).mp3" id="Dan"></audio>
+    <audio src="" id="Back of the net"></audio>
+    <audio src="" id="Bang out of order"></audio>
+    <audio src="" id="Jurassic Park"></audio>
+    <audio src="" id="Smell my cheese"></audio>
+    <audio src="" id="Goal"></audio>
+    <audio src="" id="Kiss my face"></audio>
+    <audio src="" id="Hello Partridge"></audio>
+
+    <!--creating containers for buttons-->
+
+    <div id="buttons">
+
+    </div>
+
+    <script>
+        const sounds = [
+            'Ah-Ha', 
+            'Dan', 
+            'Back of the net', 
+            'Bang out of order', 
+            'Jurassic Park', 
+            'Smell my cheese', 
+            'Goal', 
+            'Kiss my face', 
+            'Hello Partridge'
+        ];
+
+        sounds.forEach((sound) => {
+            const buttons = document.createElement('button');
+            buttons.classList.add('button');
+
+            buttons.innerText = sound;
+        /*This function helps to play the sound when you click*/
+            buttons.addEventListener('click', ()=>{
+                document.getElementById(sound).play();
+            });
+
+            document.getElementById('buttons').appendChild(buttons);
+        });
+        
+        /*this function is necessary because when you do all the java code it plays all the sounds at the same time so this helps to stop those songs and play only the ones that is clicked by the user*/
+        function stopSongs() {
+            sounds.forEach((sound) => {
+                const song = document.getElementById(sound);
+
+                song.onpause();
+                song.currentTime = 0;
+            });
+        }
+    </script>
+</body>
+</html>
