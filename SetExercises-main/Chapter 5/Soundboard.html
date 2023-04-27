@@ -10,13 +10,14 @@
     <style>
 
         body {
-            background-color: darkslategrey;
+            background-image: url(bg.jpg);
+            background-size: cover;
             font-family: 'Roboto', sans-serif;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 100px;
             text-align: center;
             overflow: hidden;
             margin: 0;
@@ -24,40 +25,50 @@
 
         h1 {
             text-align: center;
+            margin-top: 50px;
+            background-color: darkmagenta;
+            height: auto;
+            width: 80%;
+            padding: auto;
+            color: white;
         }
 
 
         .button {
-            background-color: blueviolet;
+            background-color: mediumorchid;
             border-radius: 10px;
-            border: 1px solid black;
+            border: 5px solid black;
             color: black;
             margin: 1rem;
-            padding: 1.5rem 3rem;
+            padding: 50px;
             font-weight: bold;
             cursor: pointer;
+            width: 30%;
+            height: auto
         }
     </style>
 </head>
 
 <body>
 
-    <center><h1>Audio Sampler</h1></center>
+   <h1>Audio Sampler</h1>
 
-    <audio src="Ah-ha_Sound_Effects_(getmp3.pro).mp3" id="Ah-Ha"></audio>
-    <audio src="Dan_Dan_Dannnnnnnn_Sound_Effect_(getmp3.pro).mp3" id="Dan"></audio>
-    <audio src="" id="Back of the net"></audio>
-    <audio src="" id="Bang out of order"></audio>
-    <audio src="" id="Jurassic Park"></audio>
-    <audio src="" id="Smell my cheese"></audio>
-    <audio src="" id="Goal"></audio>
-    <audio src="" id="Kiss my face"></audio>
-    <audio src="" id="Hello Partridge"></audio>
+<!--Adding those sample audios by using the audio tags-->
 
-    <!--creating containers for buttons-->
+    <audio src="Ah-Ha.mp3" id="Ah-Ha"></audio>
+    <audio src="Dan.mp3" id="Dan"></audio>
+    <audio src="Back Of The Net.mp3" id="Back of the net"></audio>
+    <audio src="Bang Out Of Order.mp3" id="Bang out of order"></audio>
+    <audio src="Jurassic Park.mp3" id="Jurassic Park"></audio>
+    <audio src="Smell My Cheese.mp3" id="Smell my cheese"></audio>
+    <audio src="Goal.mp3" id="Goal"></audio>
+    <audio src="Kiss my Face.mp3" id="Kiss my face"></audio>
+    <audio src="Hello Partridge.mp3" id="Hello Partridge"></audio>
+
+    <!--div tag for buttons-->
 
     <div id="buttons">
-
+    
     </div>
 
     <script>
@@ -86,7 +97,7 @@
             document.getElementById('buttons').appendChild(buttons);
         });
         
-        /*this function is necessary because when you do all the java code it plays all the sounds at the same time so this helps to stop those songs and play only the ones that is clicked by the user*/
+        /*this function is necessary because when you open the index.html all the java code plays all the sounds at the same time so this helps to stop those songs and play only the ones that is clicked by the user*/
         function stopSongs() {
             sounds.forEach((sound) => {
                 const song = document.getElementById(sound);
