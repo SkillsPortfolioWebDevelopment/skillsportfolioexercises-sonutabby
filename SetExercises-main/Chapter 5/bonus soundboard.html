@@ -18,21 +18,19 @@
             align-items: center;
             justify-content: center;
             height: 100px;
-            text-align: center;
             overflow: hidden;
             margin: 0;
         }
 
         h1 {
             text-align: center;
-            float: right;
             background-color: darkmagenta;
             height: auto;
             width: 30%;
-            padding: auto;
             color: white;
-            margin-right: 100px;  
+            margin-left: 500px; 
             position: relative;
+            margin-top: 50px;
         }
 
 
@@ -48,22 +46,26 @@
             height: 25%;
             float: right;
             margin-left: 150px;
-            margin-right: 20px;
+            margin-right: 10px;
             margin-top: 10px;
             border-spacing: 25px;
             float: right;
             object-position: right;
+            display: grid;
+            grid-column: auto auto auto;
+            
             
         }
 
-        .input {
+        section {
             float: left;
-            margin-right: 500px;
             border-radius: 25px;
             border: 5px solid black;
             padding: 100px;
             background-color: white;
-            margin-top: 50px;
+            margin-right: 1000px;
+            position: relative;
+            margin-top: -500px;
         }
     </style>
 
@@ -71,25 +73,7 @@
 
 <body>
 
-    <div class="input">
-        <input type="text" id="text-to-speech" placeholder="Type Here" />
-    <button type="button" onclick="textToAudio()"> Say it </button>
-    </div>
-
-    <script>
-        function textToAudio() {
-            let msg = document.getElementById("text-to-speech").value;
-            let speech = new SpeechSynthesisUtterance();
-            speech.lang = "en-US";
-            speech.text = msg;
-            speech.volume = 1;
-            speech.rate = 1;
-            speech.pitch =1;
-            window.speechSynthesis.speak(speech);
-        }
-    </script>
-    
-   <h1>Audio Sampler</h1>
+    <h1>Audio Sampler</h1>
 
 <!--Adding those sample audios by using the audio tags-->
 
@@ -107,7 +91,29 @@
 
     <div id="buttons">
     
+    </div> 
+
+    <section>
+    <div class="input">
+        <input type="text" id="text-to-speech" placeholder="Type Here" />
+    <button type="button" onclick="textToAudio()"> Say it </button>
     </div>
+
+</section>
+
+    <script>
+        function textToAudio() {
+            let msg = document.getElementById("text-to-speech").value;
+            let speech = new SpeechSynthesisUtterance();
+            speech.lang = "en-US";
+            speech.text = msg;
+            speech.volume = 1;
+            speech.rate = 1;
+            speech.pitch =1;
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+    
 
     <script>
         const sounds = [
