@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit to Celcius</title>
+
+    <!--adding an internal style for the input feild where you need to farenheit-->
+    <style>
+        input {
+            background-color: white;
+            width: 300px;
+            height: 25px;
+            border: 2px solid black;
+        }
+
+        label {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <label>Fahrenheit:</label> <!--using the label value to easier to recognize where the user will input the fahrenheit value to convert into celcius-->
+        <input id="inputFahrenheit" type="number" placeholder="Please enter Fahrenheit to covert into celsius"
+        oninput="temperatureConverter(this.value)"
+        onchange="temperatureConverter(this.value)">
+      </p>
+      <p>Celsius: <span id="outputCelsius"></span></p> <!--adding this function span id to combine it with javascript-->
+
+      <script>
+        /* When the input field receives a farenheit input, it will convert the value from fahrenheit to celsius */
+      function temperatureConverter(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8; /* this helps to get the valuu and answer of the farenheit the user input */
+}
+      </script>
+</body>
+</html>
